@@ -1,0 +1,26 @@
+@import 'partials/global/variables';
+@import 'partials/global/mixins';
+@import "icons/*.png";
+$desktop-logo-height: icons-sprite-height(desktop-logo);
+$desktop-logo-width: icons-sprite-width(desktop-logo);
+
+
+/* -- Logo -- */
+#site-name {
+  margin: 40px 0 0;
+  display: inline-block;
+  border-bottom: 6px solid #000;
+  @include breakpoints(phone) {
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  h1 {
+       margin: 20px 0;
+       @include hide-text;
+       @include icons-sprite(desktop-logo);
+       height: $desktop-logo-height;  
+       width: $desktop-logo-width;  
+  }
+}
+

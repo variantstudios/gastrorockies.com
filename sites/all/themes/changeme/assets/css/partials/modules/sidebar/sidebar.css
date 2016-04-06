@@ -1,0 +1,67 @@
+/* -- BREAKPOINTS -- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/variant\/public_html\/beta\/sites\/all\/themes\/vs\/sass\/partials\/modules\/sidebar\/sidebar\.scss}line{font-family:\000034}}
+.sidebar {
+  margin: 0 0 30px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/variant\/public_html\/beta\/sites\/all\/themes\/vs\/sass\/partials\/modules\/sidebar\/sidebar\.scss}line{font-family:\000036}}
+.sidebar h2 {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+@media all and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation: landscape) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/variant\/public_html\/beta\/sites\/all\/themes\/vs\/sass\/partials\/modules\/sidebar\/sidebar\.scss}line{font-family:\0000314}}
+  .request-quote p:first-child {
+    float: left;
+    width: 60%;
+    margin: 0;
+  }
+}
+@media all and (max-width: 760px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/variant\/public_html\/beta\/sites\/all\/themes\/vs\/sass\/partials\/modules\/sidebar\/sidebar\.scss}line{font-family:\0000314}}
+  .request-quote p:first-child {
+    float: left;
+    width: 60%;
+    margin: 0;
+  }
+}
+@media all and (max-width: 760px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/variant\/public_html\/beta\/sites\/all\/themes\/vs\/sass\/partials\/modules\/sidebar\/sidebar\.scss}line{font-family:\0000327}}
+  .request-quote img {
+    float: right;
+    width: 35%;
+  }
+}
+@media all and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation: landscape) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/variant\/public_html\/beta\/sites\/all\/themes\/vs\/sass\/partials\/modules\/sidebar\/sidebar\.scss}line{font-family:\0000327}}
+  .request-quote img {
+    float: right;
+    width: 35%;
+    /* padding-top: 15px; */
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/variant\/public_html\/beta\/sites\/all\/themes\/vs\/sass\/partials\/modules\/sidebar\/sidebar\.scss}line{font-family:\0000343}}
+.ie8 .request-quote p:first-child, .ie7 .request-quote p:first-child {
+  float: left;
+  width: 60%;
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/variant\/public_html\/beta\/sites\/all\/themes\/vs\/sass\/partials\/modules\/sidebar\/sidebar\.scss}line{font-family:\0000348}}
+.ie8 .request-quote img, .ie7 .request-quote img {
+  float: right;
+  width: 35%;
+  /* padding-top: 15px; */
+}
+
+/* FIXED HEIGHT NEWS BLOCK */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/variant\/public_html\/beta\/sites\/all\/themes\/vs\/sass\/partials\/modules\/sidebar\/sidebar\.scss}line{font-family:\0000357}}
+#block-block-3 .content {
+  height: 400px;
+  overflow-y: scroll;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/variant\/public_html\/beta\/sites\/all\/themes\/vs\/sass\/partials\/modules\/sidebar\/sidebar\.scss}line{font-family:\0000360}}
+#block-block-3 .content font {
+  font-size: 17px !important;
+}

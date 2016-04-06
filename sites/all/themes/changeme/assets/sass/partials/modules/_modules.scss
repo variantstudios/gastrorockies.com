@@ -1,0 +1,21 @@
+////////////////////////
+// Module Partials
+//
+// Your SMACSS Modules go here
+// Build sub folders and partials in this folder, with everything being imported, in cascading order, into this file.
+////////////////////////
+
+@import "breakpoint";
+@import "slider";
+@import "header";
+@import "footer/footer";
+@import "navigation/nav";
+@import "navigation/mobile-nav";
+@import "forms/forms";
+@import "forms/select";
+@import "forms/buttons";
+@import "portfolio/portfolio";
+@import "sidebar/sidebar";
+@import "content";
+@import "article/article_list";
+@import "article/article-fn";

@@ -1,0 +1,83 @@
+@import 'partials/global/mixins';
+@import 'partials/global/variables';
+@import "compass/css3";
+
+.node-webform.view-mode-full {
+  form {
+    margin: 40px 0 0;
+  }
+
+}
+
+input[type="text"], input[type="email"], textarea, input[type="password"], input[type="file"], input[type="number"], input[type="search"], input:-webkit-autofill  {
+  background-color: #fff;
+  border: 1px solid #dcd9d7;
+  height: auto;
+  padding: 8px 14px;
+  width: 100%;
+  @include border-radius(4px);
+  font-size: 16px;
+  color: #666;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  &:focus {
+	  outline: none;
+  }
+  &:active {
+    box-shadow: none;
+  }
+	@include breakpoint($desktop) {
+		width: auto;
+	}
+}
+
+textarea {
+  width: 90%;
+  max-width: 100%;
+  margin-bottom: 10px !important;
+  outline: none;
+}
+  
+input[type="text"], input[type="email"], textarea, input[type="password"], input[type="file"], input[type="number"]  {
+  @include animate-all-on-hover;
+  &:active, &:focus {
+	  outline: none;
+	  border: 1px solid $focus;
+  }
+  &:active, &:hover, &:focus {
+    box-shadow: none;
+    outline: none;
+  }
+
+}
+
+
+input#edit-submitted-resume-upload-button, input#edit-submitted-cover-letter-upload-button, input#edit-submitted-references-certificates-miscellaneous-upload-button, input#edit-submitted-resume-remove-button, input#edit-submitted-cover-letter-remove-button, input#edit-submitted-references-certificates-miscellaneous-remove-button  {
+	background: none;
+	color: #972629;
+	text-decoration: underline;
+}
+
+
+
+
+// Validation 
+.form-item input.error, .form-item textarea.error {
+	border: 1px solid $error;
+
+}
+
+.form-item input.valid, .form-item textarea.valid {
+	border: 1px solid $valid;
+}
+
+span.error, label.error {
+	color: $error;
+	font-style: italic;
+	font-size: 17px;
+	margin-bottom: 5px;
+	display: block;
+}

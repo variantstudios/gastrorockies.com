@@ -1,0 +1,137 @@
+/* -- BREAKPOINTS -- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gastro\/beta-ver-1\/sites\/all\/themes\/gastro\/sass\/partials\/modules\/search\/search\.scss}line{font-family:\000035}}
+.hidden-search {
+  margin-top: -132px;
+  height: 131px;
+  width: 100%;
+  background: #E7E7E7;
+  z-index: 1000;
+  -webkit-transition: margin-top 1s;
+  -moz-transition: margin-top 1s;
+  border-bottom: 2px solid #fff;
+}
+@media all and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation: landscape) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gastro\/beta-ver-1\/sites\/all\/themes\/gastro\/sass\/partials\/modules\/search\/search\.scss}line{font-family:\000035}}
+  .hidden-search {
+    margin-top: -201px;
+    height: 200px;
+    background: #E7E7E7;
+    border: 0;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gastro\/beta-ver-1\/sites\/all\/themes\/gastro\/sass\/partials\/modules\/search\/search\.scss}line{font-family:\0000320}}
+.hidden-search input[type='search'] {
+  width: 100%;
+  border: 0;
+  margin: 20px auto 10px;
+  padding: 10px 10px;
+  max-width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gastro\/beta-ver-1\/sites\/all\/themes\/gastro\/sass\/partials\/modules\/search\/search\.scss}line{font-family:\0000332}}
+.hidden-search.show {
+  margin-top: 0px;
+  -webkit-transition: margin-top 1s;
+  -moz-transition: margin-top 1s;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gastro\/beta-ver-1\/sites\/all\/themes\/gastro\/sass\/partials\/modules\/search\/search\.scss}line{font-family:\0000338}}
+.search-trigger {
+  cursor: pointer;
+}
+
+@media all and (max-width: 760px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gastro\/beta-ver-1\/sites\/all\/themes\/gastro\/sass\/partials\/modules\/search\/search\.scss}line{font-family:\0000346}}
+  .menu-wrap .search-button {
+    display: none;
+  }
+}
+@media all and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation: landscape) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gastro\/beta-ver-1\/sites\/all\/themes\/gastro\/sass\/partials\/modules\/search\/search\.scss}line{font-family:\0000346}}
+  .menu-wrap .search-button {
+    transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    float: right;
+    background-color: #f5e08d;
+    padding: 12px 12px 0px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gastro\/beta-ver-1\/sites\/all\/themes\/gastro\/sass\/partials\/modules\/search\/search\.scss}line{font-family:\0000355}}
+  .menu-wrap .search-button .search-trigger {
+    text-indent: 150%;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    background: url('../../../../images/icons.png') 0 -742px no-repeat;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gastro\/beta-ver-1\/sites\/all\/themes\/gastro\/sass\/partials\/modules\/search\/search\.scss}line{font-family:\0000360}}
+  .menu-wrap .search-button .search-trigger.show {
+    background: url('../../../../images/icons.png') 0 -900px no-repeat;
+    height: 30px;
+    width: 30px;
+  }
+}
+
+@media all and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation: landscape) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gastro\/beta-ver-1\/sites\/all\/themes\/gastro\/sass\/partials\/modules\/search\/search\.scss}line{font-family:\0000367}}
+  .search-show .search-button {
+    transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    background-color: #6e1c1e;
+  }
+}
+
+@media all and (max-width: 760px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gastro\/beta-ver-1\/sites\/all\/themes\/gastro\/sass\/partials\/modules\/search\/search\.scss}line{font-family:\0000377}}
+  .block-search input[type="submit"], .block-search #edit-submit {
+    background: #6e1c1e;
+    color: #fff;
+  }
+}
+@media all and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation: landscape) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gastro\/beta-ver-1\/sites\/all\/themes\/gastro\/sass\/partials\/modules\/search\/search\.scss}line{font-family:\0000384}}
+  .block-search input[type="search"] {
+    padding: 20px 30px;
+    font-size: 30px;
+    margin: 54px auto 10px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gastro\/beta-ver-1\/sites\/all\/themes\/gastro\/sass\/partials\/modules\/search\/search\.scss}line{font-family:\0000390}}
+  .block-search .container-inline {
+    position: relative;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gastro\/beta-ver-1\/sites\/all\/themes\/gastro\/sass\/partials\/modules\/search\/search\.scss}line{font-family:\0000393}}
+  .block-search #edit-actions, .block-search #edit-actions--2 {
+    position: absolute;
+    display: block;
+    right: 0;
+    top: 53px;
+    height: 85px;
+    width: 85px;
+    background: #f5e08d;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gastro\/beta-ver-1\/sites\/all\/themes\/gastro\/sass\/partials\/modules\/search\/search\.scss}line{font-family:\00003101}}
+  .block-search #edit-actions input[type="submit"], .block-search #edit-actions--2 input[type="submit"] {
+    text-indent: 150%;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    padding: 0;
+    margin: 29px;
+    background: url('../../../../images/icons.png') 0 -682px no-repeat;
+    height: 30px;
+    width: 30px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gastro\/beta-ver-1\/sites\/all\/themes\/gastro\/sass\/partials\/modules\/search\/search\.scss}line{font-family:\00003108}}
+  .block-search input[type="submit"] {
+    background: url('../../../../images/icons.png') 0 -682px no-repeat;
+    height: 30px;
+    width: 30px;
+  }
+}

@@ -1,0 +1,196 @@
+@import 'partials/global/mixins';
+@import 'partials/global/variables';
+@import "compass/css3";
+
+form {
+  margin: 40px 0;
+}
+
+input[type="text"], input[type="email"], textarea, input[type="password"], input[type="file"], input[type="number"]  {
+  background-color: #fff;
+  border: 1px solid #dcd9d7;
+  height: auto;
+  padding: 5px 8px;
+  width: 90%;
+  @include border-radius(4px);
+  font-size: 15px;
+  color: #666;
+  @include breakpoints(tablet) {
+      width: auto;
+      max-width: 55%;
+  }
+  &:active {
+    box-shadow: none;
+  }
+
+}
+
+textarea {
+  width: 90%;
+  max-width: 100%;
+  margin-bottom: 10px !important;
+}
+  
+fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+.fieldset-legend {
+  @include subheading;
+}
+.fieldset-wrapper {
+  padding: 30px 0 0;
+}
+
+
+.form-item {
+  @include clearfix;
+  margin: 10px 0 30px;
+  .description {
+    @include breakpoints(tablet) {
+      padding-left: 43%;
+    }
+    @include breakpoints(lg-desktop) {
+      padding-left: 33%;
+    }
+    margin-top: 5px;
+    font-style: italic;
+    color: $accent-four;
+  }
+  label {
+    @include breakpoints(phone) {
+      margin-bottom: 10px;
+      display: block;
+    }
+     @include breakpoints(tablet) {
+      width: 40%;
+      float: left;
+      margin-right: 3%;
+    }
+     @include breakpoints(lg-desktop) {
+      width: 30%;
+    }
+  }
+  div {
+    overflow: hidden;
+  }
+}
+
+/*#webform-component-personal-information {
+  input[type="text"], input[type="email"], textarea, input[type="password"], input[type="file"], input[type="number"]  {
+    @include breakpoints(phone) {
+      width: 100%;
+    }
+    @include breakpoints(tablet) {
+      width: auto;
+    }
+    @include breakpoints(lg-desktop) {
+      width: auto;
+    }
+  }
+  textarea {
+    width: auto;
+  }
+}*/
+
+.form-checkboxes {
+  float: none;
+  label {
+    float: none;
+    width: auto;
+    display: inline-block;
+    font-size: 14px;
+    @include breakpoints(desktop) {
+      font-size: 18px;
+    }
+  }
+  .form-item {
+    margin: 0;
+    width: 50%;
+    float: left;
+    margin-bottom: 8px;
+    @include breakpoints(dektop) {
+      width: 26%;
+    }    
+  }
+}
+
+.field-prefix {
+  margin-right: 5px;
+  @include breakpoints(phone) {
+    float: left;
+    margin: 4px 5px 0 0;
+  }
+}
+
+.webform-datepicker {
+  .form-item {
+    @include breakpoints(phone) {
+      margin-bottom: 15px;
+    }
+    @include breakpoints(tablet) {
+      display: inline-block !important;
+      margin-bottom: 0;
+    }
+    
+  }
+}
+input.webform-calendar {
+ margin-top: 13px;
+ display: inline-block;
+}
+
+.webform-container-inline  {
+  .form-checkboxes {
+    .form-item {
+      display: block !important;
+    }
+  }
+}
+
+.ie8, .ie7 {
+  .form-item {
+    .description {
+      padding-left: 33%;
+    }
+    label {
+      display: block;
+      width: 30%;
+      float: left;
+      margin-right: 3%;
+    }
+  }
+  input[type="text"], input[type="email"], textarea, input[type="password"], input[type="file"], input[type="number"]  {
+    width: 100%;
+    max-width: 55%;
+  }
+  textarea {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 10px !important;
+  }
+}
+
+
+/* Contact Form */
+#webform-client-form-2 {
+  .description {
+    @include breakpoints(tablet) {
+      padding-left: 21%;
+    }
+    margin-top: 5px;
+    font-style: italic;
+    color: $accent-four;
+  }
+    
+  .form-item {
+    label {
+       @include breakpoints(tablet) {
+        width: 18%;
+        float: left;
+        margin-right: 3%;
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+name = Webform Reply-To
+description = Adds a Reply-To: header to E-mail sent by Webform
+package = Webform
+dependencies[] = webform
+files[] = webform_reply_to.module
+core = 7.x
+
+; Information added by drupal.org packaging script on 2013-10-26
+version = "7.x-1.0+3-dev"
+core = "7.x"
+project = "webform_reply_to"
+datestamp = "1382756075"
+

@@ -1,0 +1,63 @@
+/* -- BREAKPOINTS -- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gastro\/beta-ver-1\/sites\/all\/themes\/gastro\/sass\/partials\/modules\/news\/news\.scss}line{font-family:\000035}}
+.news .half-width {
+  margin-bottom: 35px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gastro\/beta-ver-1\/sites\/all\/themes\/gastro\/sass\/partials\/modules\/news\/news\.scss}line{font-family:\000038}}
+.news .news-category {
+  font-weight: 700;
+  padding-right: 15px;
+  font-size: 18px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gastro\/beta-ver-1\/sites\/all\/themes\/gastro\/sass\/partials\/modules\/news\/news\.scss}line{font-family:\0000313}}
+.news span, .news a {
+  text-decoration: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gastro\/beta-ver-1\/sites\/all\/themes\/gastro\/sass\/partials\/modules\/news\/news\.scss}line{font-family:\0000316}}
+.news .posted {
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 300;
+  padding-left: 15px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gastro\/beta-ver-1\/sites\/all\/themes\/gastro\/sass\/partials\/modules\/news\/news\.scss}line{font-family:\0000322}}
+.news .separator {
+  font-size: 16px;
+  font-weight: 300;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gastro\/beta-ver-1\/sites\/all\/themes\/gastro\/sass\/partials\/modules\/news\/news\.scss}line{font-family:\0000326}}
+.news h5 {
+  line-height: 1.2;
+  padding: 14px 0 10px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #6e1c1e;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gastro\/beta-ver-1\/sites\/all\/themes\/gastro\/sass\/partials\/modules\/news\/news\.scss}line{font-family:\0000335}}
+.news-details {
+  border-bottom: 1px dashed #ccc;
+  padding-bottom: 5px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gastro\/beta-ver-1\/sites\/all\/themes\/gastro\/sass\/partials\/modules\/news\/news\.scss}line{font-family:\0000343}}
+.latest-article .news .views-row-first {
+  border: 1px solid #ddd;
+  border-bottom: 4px solid #f5e08d;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/lib\/ruby\/gems\/1\.8\/gems\/singularitygs-1\.1\.2\/stylesheets\/singularitygs\/helpers\/_clearfix\.scss}line{font-family:\0000365}}
+.latest-article .news .views-row-first:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gastro\/beta-ver-1\/sites\/all\/themes\/gastro\/sass\/partials\/modules\/news\/news\.scss}line{font-family:\0000347}}
+.latest-article .news .views-row-first img {
+  float: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gastro\/beta-ver-1\/sites\/all\/themes\/gastro\/sass\/partials\/modules\/news\/news\.scss}line{font-family:\0000350}}
+.latest-article .news .views-row-first .latest-article-details {
+  overflow: hidden;
+  padding: 10px 20px;
+  display: block;
+}

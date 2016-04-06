@@ -1,0 +1,64 @@
+/* -- BREAKPOINTS -- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gastro\/beta-ver-1\/sites\/all\/themes\/gastro\/sass\/partials\/modules\/footer\/footer\.scss}line{font-family:\000037}}
+footer {
+  padding: 50px 0;
+  clear: both;
+  background: #4D4D4D;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/lib\/ruby\/gems\/1\.8\/gems\/singularitygs-1\.1\.2\/stylesheets\/singularitygs\/helpers\/_clearfix\.scss}line{font-family:\0000365}}
+footer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gastro\/beta-ver-1\/sites\/all\/themes\/gastro\/sass\/partials\/modules\/footer\/footer\.scss}line{font-family:\0000312}}
+footer ul {
+  margin: 0;
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gastro\/beta-ver-1\/sites\/all\/themes\/gastro\/sass\/partials\/modules\/footer\/footer\.scss}line{font-family:\0000315}}
+footer ul li, footer ul li.leaf, footer ul li.expanded {
+  list-style: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gastro\/beta-ver-1\/sites\/all\/themes\/gastro\/sass\/partials\/modules\/footer\/footer\.scss}line{font-family:\0000317}}
+footer ul li a, footer ul li.leaf a, footer ul li.expanded a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gastro\/beta-ver-1\/sites\/all\/themes\/gastro\/sass\/partials\/modules\/footer\/footer\.scss}line{font-family:\0000326}}
+footer ul ul li a, footer ul ul li.leaf a, footer ul ul li.expanded a {
+  color: #ccc;
+  font-size: 17px;
+}
+@media (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gastro\/beta-ver-1\/sites\/all\/themes\/gastro\/sass\/partials\/modules\/footer\/footer\.scss}line{font-family:\0000336}}
+  footer ul.menu .menu-mlid-864, footer ul.menu .menu-mlid-905, footer ul.menu .menu-mlid-873 {
+    float: left;
+    width: 30%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gastro\/beta-ver-1\/sites\/all\/themes\/gastro\/sass\/partials\/modules\/footer\/footer\.scss}line{font-family:\0000340}}
+  footer ul.menu .menu-mlid-869, footer ul.menu .menu-mlid-871 {
+    overflow: hidden;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gastro\/beta-ver-1\/sites\/all\/themes\/gastro\/sass\/partials\/modules\/footer\/footer\.scss}line{font-family:\0000344}}
+  footer ul.menu > li {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gastro\/beta-ver-1\/sites\/all\/themes\/gastro\/sass\/partials\/modules\/footer\/footer\.scss}line{font-family:\0000349}}
+  footer ul.menu > li > ul > li {
+    width: 100%;
+    float: none;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gastro\/beta-ver-1\/sites\/all\/themes\/gastro\/sass\/partials\/modules\/footer\/footer\.scss}line{font-family:\0000356}}
+.bottom-footer {
+  background: #303030;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gastro\/beta-ver-1\/sites\/all\/themes\/gastro\/sass\/partials\/modules\/footer\/footer\.scss}line{font-family:\0000358}}
+.bottom-footer p {
+  color: #fff;
+}

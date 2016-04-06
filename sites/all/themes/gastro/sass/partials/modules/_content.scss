@@ -1,0 +1,142 @@
+@import 'partials/global/variables';
+@import 'partials/global/mixins';
+@import 'partials/global/sprites';
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.content {
+	blockquote {
+		margin: 25px 0;
+		padding: 20px;
+		background-color: #f5f5f5;
+	}
+}
+
+.two-section-layout {
+	.ds-col-one {
+		border-bottom: 1px solid $color-one;
+		padding-bottom: 20px;
+		margin-bottom: 30px;
+	}
+}
+
+
+
+
+// Locations FN
+.get-directions-wrap {
+  margin: 20px 0 0;
+  padding: 20px 0 0;
+  border-top: 1px solid #ccc;
+  label {
+	  font-weight: normal;
+  }
+  .form-item {
+	  .description {
+	    padding-top: 10px;
+		  @include breakpoint($desktop) {
+				max-width: 500px;
+		  }
+	  }
+  }
+  #getdirections_btn_key_1 {
+    margin: 0 0 30px;
+	  @include breakpoint($desktop) {
+		  margin: 20px 0 40px 19%;
+	  }
+  }  
+}
+.getdirections {
+  @include clearfix;
+  table {
+    width: 100% !important;
+    td {
+      display: inline !important;
+      float: left !important;
+      width: 100% !important;
+      tr {
+        @include clearfix;
+        td {
+          float: none !important;
+          display: inline-block !important;
+          width: auto !important;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+  .getdirections-map > div {
+    width: 100% !important;
+  }
+  .adp-directions {
+    tr {
+      border-bottom: 1px solid #CDCDCD;
+      padding: 10px;
+      margin: 5px;
+      display: block;
+      @include breakpoint($phone) {
+	      padding: 5px 5px;
+				margin: 0px;
+      }
+      .adp-substep {
+        border: 0;
+        padding: 0;
+        margin: 0 5px;
+      }
+    }
+  }
+  .adp-distance {
+	  float: right !important;
+  }
+  img.adp-marker {
+    margin: 8px 10px 0;
+  }
+}
+
+
+
+
+// FAQ
+.accordion {
+   .question, .answer {
+      padding: 10px;
+      border: 1px solid #ccc;
+      &:last-of-type {
+        border-bottom: 1px solid #ccc; 
+      }
+      a {
+        display: block;
+        font-weight: bold;
+        text-decoration: none;
+        color: #6E1C1E;
+      }
+   }
+   .question {
+     &:last-of-type {
+        border-bottom: 1px solid #ccc; 
+      }
+      a:before {
+        @include get-sprite($icons, question);
+        content: '';
+        float: left;
+        margin: 4px 20px 0 5px;
+      }
+   }
+  .answer {
+     border-top: 0; 
+     font-size: 90%;
+     border-bottom: 0;
+     padding-left: 60px;
+     padding-right: 20px;
+     &:last-of-type {
+       border-top: 1px solid #ccc;
+       position: relative;
+       top: -1px;
+     }
+  }
+}

@@ -1,0 +1,46 @@
+@import 'partials/global/variables';
+@import 'partials/global/mixins';
+
+input[type="submit"], #edit-submit {
+  background: #fff;
+  padding: 7px 30px;
+  border: 4px solid $accent-four;
+  color: $accent-four;
+  font-weight: 700;
+  @include animate-all-on-hover;
+  text-transform: uppercase;
+  font-size: 15px;
+  
+  &:hover {
+    background: $accent-four;
+    color: #fff;
+  }
+}
+
+.webform-client-form {
+  input[type="submit"] {
+    @include breakpoints(tablet) {
+      margin-left: 43%;
+    }
+    @include breakpoints(lg-desktop) {
+      margin-left: 33%;
+    }
+  }
+}
+
+.ie8, .ie7 { 
+  .webform-client-form {
+    input[type="submit"] {
+        margin-left: 33%;    
+    }
+  }
+}
+
+/* Contact Form */
+#webform-client-form-2 {
+  input[type="submit"] {
+    @include breakpoints(tablet) {
+      margin-left: 21%;
+    }
+  }
+}

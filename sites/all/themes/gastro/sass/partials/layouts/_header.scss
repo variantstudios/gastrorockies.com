@@ -1,0 +1,34 @@
+@import "breakpoint";
+@import "singularitygs";
+
+@include breakpoints(phone) {
+  #header {
+    text-align: center;
+    /*background: rgba(0, 0, 0, 0.75);*/
+  }
+}
+
+.not-front {
+  .header-img, .static-page-header {
+  	height: 285px;
+  	width: 100%;
+  	overflow: hidden;
+  	z-index: -99;
+  	text-align: center;
+  	background: #050C14;
+  	border-bottom: 5px solid #F5E08D;
+  	@include breakpoints(tablet) {  
+  		height: 450px;
+  		width: 100%;
+  	}
+  }
+}
+.not-front {
+	.site-header {
+	  height: 285px;
+  	@include breakpoints(tablet) {
+  		height: 450px;
+  		position: relative;
+		}
+	}
+}

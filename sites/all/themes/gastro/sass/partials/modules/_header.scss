@@ -1,0 +1,196 @@
+@import 'partials/global/variables';
+@import 'partials/global/mixins';
+@import 'partials/global/sprites';
+
+
+
+
+/*  ----- DEFAULT LOGO STYLING ------  */
+	#site-name {
+	  margin: 0;
+	  display: block;
+	  @include breakpoints(phone) {
+	    text-align: center;
+	    margin-bottom: 0;
+	    margin-top: 0;
+	  }
+	   @include breakpoints(tablet) {
+		     @include get-sprite($icons, logo);
+			     background: rgba(255, 255, 255, 0.9);
+						z-index: 99;
+				    position: absolute;
+				    padding: 15px 30px;
+				    width: 275px;
+				    height: 153px;
+				    top: 292px;
+				    
+		     }
+	  a {
+		  display: block;
+		  width: auto;
+		  height: auto;
+	  }
+	  h1 {
+		   margin: 0;
+		   @include hide-text;
+		    @include breakpoints(phone) {
+		      @include get-sprite($icons, mobile-logo);
+		      margin: 25px auto 10px;
+		   }
+		   /*@media
+				only screen and (-webkit-min-device-pixel-ratio: 2)      and (max-width: 767px),
+				only screen and (   min--moz-device-pixel-ratio: 2)      and (max-width: 767px),
+				only screen and (     -o-min-device-pixel-ratio: 2/1)    and (max-width: 767px),
+				only screen and (        min-device-pixel-ratio: 2)      and (max-width: 767px),
+				only screen and (                min-resolution: 192dpi) and (max-width: 767px),
+				only screen and (                min-resolution: 2dppx)  and (max-width: 767px) { 
+				
+					background-image: url('sites/all/themes/gastro/mobile-logo-x2.png');
+					height: 105px;
+					width: 175px;
+		      background-size: 175px 105px;
+		      margin: 25px auto 10px;
+				}*/
+		   
+		   @include breakpoints(tablet) {
+		     @include get-sprite($icons, logo);
+				  position: absolute;
+					z-index: 99;
+			     
+		   }
+	  }
+	}
+	
+	.logo-section {
+	  position: relative;
+	}
+	
+		.not-front {
+  	.logo-bg {
+      	@include breakpoints(tablet) {
+        position: absolute;
+        background: rgba(255, 255, 255, 0.9);
+        height: 154px;
+        left: 0;
+        width: 38%;
+        top: 292px;
+        z-index: 99;
+      }
+      @include breakpoints(desktop) {
+        width: 32%;
+        top: 354px;
+      }
+  	}
+  	#site-name {
+    	
+    	@include breakpoints(tablet) {
+      	background: none;
+      	top: 292px;
+    	}
+    	@include breakpoints(desktop) {
+      	background: none;
+      	top: 292px;
+    	}
+  	}
+	}
+ 
+
+/* --------- LOGO ON HOMEPAGE ON DESKTOP and TABLET ------------- */
+	.front {
+		#site-name {
+	    @include breakpoint($phone) {
+		    margin: 0px -20px 0px;
+				display: block;
+				background: rgba(255, 255, 255, 0.8);
+				padding: 20px 0;
+				position: absolute;
+				width: 100%;
+				bottom: 0;
+				h1 {
+					margin: 0 auto;
+				}
+	    }	 
+	    @include breakpoint($tablet) {
+	    	top: 399px;
+		  }
+		   @include breakpoint($desktop) {
+	    	top: 28px;
+			  background: none;
+		  }
+    } 
+	  
+		.logo-section {
+			  display: none;
+		}
+	
+	}
+	
+
+
+
+
+/* --------- Mobile Menu Bar --------- */
+	.mobile-bar {
+	    @include breakpoints(tablet-down) {
+		    background: $color-two;
+				position: absolute;
+				height: 50px;
+				z-index: 222;
+				width: 100%;
+				left: 0;
+	    }
+		@include breakpoints(desktop) {
+			display: none;
+		}
+	}
+	
+	@include breakpoints(tablet-down) {
+	  .left-half, .right-half {
+		  width: 50%;
+		  height: 50px;
+	  }
+		.right-half {
+		  float: right;
+		  border-left: 1px solid #fff;
+	  }
+	  .left-half {
+		  float: left;
+		  border-right: 1px solid #fff;
+	  }
+		.menu-trigger {
+			@include hide-text;
+			 @include get-sprite($icons, mobile-open);
+			 margin: 17px auto 0;
+	 	}
+	 	.search-trigger {
+		 	cursor: pointer;
+	    position: relative;
+	    z-index: 1;
+	    display: block;
+	    @include hide-text;
+			@include get-sprite($icons, search);
+			margin: 17px auto 0;
+	 	}
+	 	.search-trigger.show {
+		 	@include get-sprite($icons, mobile-search-close);
+	 	}
+	}
+
+ @keyframes search-icon {
+    from {opacity: 0; width: 50px; height: 0px;}
+    to {opacity: 1; width: 50px; height: 50px;}
+ }
+
+@-webkit-keyframes search-icon {
+  from {opacity: 0; }
+  to {opacity: 1;}
+}
+
+			
+			
+/* -- Menu Wrap --- */
+.menu-wrap {
+	@include breakpoints(phone) {
+	  margin-bottom: 40px;
+	}
+}

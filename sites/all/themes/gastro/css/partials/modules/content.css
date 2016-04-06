@@ -1,0 +1,65 @@
+/* -- BREAKPOINTS -- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gastro\/beta-ver-1\/sites\/all\/themes\/gastro\/sass\/partials\/modules\/content\.scss}line{font-family:\000035}}
+.content blockquote {
+  margin: 25px 0;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gastro\/beta-ver-1\/sites\/all\/themes\/gastro\/sass\/partials\/modules\/content\.scss}line{font-family:\0000313}}
+.two-section-layout .ds-col-one {
+  border-bottom: 1px solid #f5e08d;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gastro\/beta-ver-1\/sites\/all\/themes\/gastro\/sass\/partials\/modules\/content\.scss}line{font-family:\0000320}}
+#big-video-wrap {
+  z-index: -9;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gastro\/beta-ver-1\/sites\/all\/themes\/gastro\/sass\/partials\/modules\/content\.scss}line{font-family:\0000324}}
+.get-directions-wrap {
+  margin: 20px 0 0;
+  padding: 20px 0 0;
+  border-top: 1px solid #ccc;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gastro\/beta-ver-1\/sites\/all\/themes\/gastro\/sass\/partials\/modules\/content\.scss}line{font-family:\0000330}}
+.getdirections table {
+  width: 100% !important;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gastro\/beta-ver-1\/sites\/all\/themes\/gastro\/sass\/partials\/modules\/content\.scss}line{font-family:\0000332}}
+.getdirections table td {
+  display: inline !important;
+  float: left !important;
+  width: 100% !important;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gastro\/beta-ver-1\/sites\/all\/themes\/gastro\/sass\/partials\/modules\/content\.scss}line{font-family:\0000337}}
+.getdirections table td tr td {
+  float: none !important;
+  display: inline-block !important;
+  width: auto !important;
+  vertical-align: middle;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gastro\/beta-ver-1\/sites\/all\/themes\/gastro\/sass\/partials\/modules\/content\.scss}line{font-family:\0000346}}
+.getdirections .getdirections-map > div {
+  width: 100% !important;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gastro\/beta-ver-1\/sites\/all\/themes\/gastro\/sass\/partials\/modules\/content\.scss}line{font-family:\0000350}}
+.getdirections .adp-directions tr {
+  border-bottom: 1px solid #CDCDCD;
+  padding: 10px;
+  margin: 5px;
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gastro\/beta-ver-1\/sites\/all\/themes\/gastro\/sass\/partials\/modules\/content\.scss}line{font-family:\0000355}}
+.getdirections .adp-directions tr .adp-substep {
+  border: 0;
+  padding: 0;
+  margin: 0 5px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gastro\/beta-ver-1\/sites\/all\/themes\/gastro\/sass\/partials\/modules\/content\.scss}line{font-family:\0000362}}
+.getdirections img.adp-marker {
+  margin: 8px 10px 0;
+}

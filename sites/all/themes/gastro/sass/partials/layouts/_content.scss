@@ -1,0 +1,182 @@
+@import "breakpoint";
+@import "singularitygs";
+@import 'partials/global/mixins';
+@import 'partials/global/variables';
+
+body {
+  background: #fff;
+  margin: 0 auto;
+  @include clearfix;
+}
+
+#header {
+  
+}
+
+nav {
+  @include breakpoint($tablet) {
+    @include grid-span (12, 1);
+  }
+  @include breakpoint($desktop) {
+    @include grid-span (12, 1);
+  }
+}
+
+
+.page-wrap {
+	overflow: hidden;
+	position: relative;
+}
+.wrap {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  @include clearfix;
+  /*@include background-grid;*/
+  @include breakpoint($tablet) {
+    max-width: $tablet;
+    padding: 0 20px;
+  }
+  @include breakpoint($desktop) {
+    max-width: 980px;
+  }
+  @include breakpoint($lg-desktop) {
+    max-width: $lg-desktop;
+  }
+}
+
+#main {
+  padding: 40px 0 0;
+  clear: both;
+  @include breakpoint($tablet) {
+    @include grid-span (8.5, 4.5);
+    padding: 40px 0;
+  }
+  @include breakpoint($desktop) {
+    @include grid-span (8.5, 4.5);
+  }
+}
+
+#main.no-sidebar {
+  padding: 40px 0;
+  clear: both;
+  @include breakpoint($tablet) {
+    @include grid-span (12, 1);
+  }
+  @include breakpoint($desktop) {
+    @include grid-span (12, 1);
+  }
+}
+
+
+.front #main {
+  padding: 40px 0;
+  clear: both;
+  @include breakpoint($tablet) {
+    @include grid-span (12, 1);
+  }
+  @include breakpoint($desktop) {
+    @include grid-span (7, 1);
+  }
+}
+
+
+#sidebar {
+  padding: 0px 0 20px;
+  clear: both;
+  border-bottom: 1px dotted #ddd;
+  @include breakpoint($tablet) {
+    @include grid-span (3, 1);
+    padding: 40px 0;
+    border-bottom: 0;
+    position: relative;
+  }
+  @include breakpoint($desktop) {
+    @include grid-span (3, 1);
+    padding: 40px 0;
+    border-bottom: 0;
+    position: relative;
+  }
+}
+
+.front #sidebar {
+  @include breakpoint($tablet) {
+    @include grid-span (12, 1);
+  }
+  @include breakpoint($desktop) {
+    @include grid-span (5, 8);
+    padding: 40px 25px;
+  }
+}
+
+.not-front .sidebar-bg {
+	@include breakpoints(tablet) {
+		background: #fafafa;
+		width: 500%;
+		left: -400%;
+		position: absolute;
+		top: 0;
+		height: 6600%;
+		z-index: -9;
+		overflow: hidden;
+	}
+}
+
+.front .sidebar-bg {
+	@include breakpoints(desktop) {
+		background: #fafafa;
+		width: 600%;
+		right: -500%;
+		position: absolute;
+		top: 0;
+		height: 6600%;
+		z-index: -9;
+		overflow: hidden;
+	}
+}
+
+
+.two-col-layout {
+	.half-width {
+	  border: 1px solid #ddd;
+	  border-bottom: 4px solid $color-one;
+	  padding: 10px 20px;
+		@include breakpoint($tablet) {
+		  display: inline-block;
+		  width: 48%;
+		  vertical-align: top;
+		  &.views-row-odd {
+			  margin-right: 3%;
+		  }
+		}
+	}
+}
+
+.node-webform {
+	.ds-top {
+		border-bottom: 1px solid $color-one;
+		padding-bottom: 20px;
+		margin-bottom: 30px;
+	}
+	.ds-left {
+		@include breakpoint($tablet) {
+			@include grid-span(5.5,1);
+		}
+	}
+	.ds-right {
+		@include breakpoint($tablet) {
+			@include grid-span(5.5,7.5);
+		}
+	}
+	
+}
+
+
+
+
+
+
+

@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Providers Section feature.
+ */
+
+include_once 'providers_section.features.inc';

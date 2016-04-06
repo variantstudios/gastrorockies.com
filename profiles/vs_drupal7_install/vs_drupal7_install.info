@@ -1,0 +1,147 @@
+name = VS D7 Install
+description = Modified Standard install profile for custom install.
+core = 7.x
+
+; Dependent Modules
+dependencies[] = admin_devel
+dependencies[] = admin_menu_toolbar
+dependencies[] = block
+dependencies[] = contextual
+dependencies[] = dblog
+dependencies[] = field_ui
+dependencies[] = file
+dependencies[] = help
+dependencies[] = image
+dependencies[] = invisimail
+dependencies[] = list
+dependencies[] = menu
+dependencies[] = number
+dependencies[] = options
+dependencies[] = path
+dependencies[] = rdf
+dependencies[] = taxonomy
+
+dependencies[] = libraries
+
+; CCK
+dependencies[] = email
+dependencies[] = filefield_paths
+dependencies[] = link
+
+; CKEditor
+dependencies[] = wysiwyg
+
+; Features
+dependencies[] = features
+dependencies[] = diff
+dependencies[] = strongarm
+
+dependencies[] = auto_nodetitle
+dependencies[] = backup_migrate
+dependencies[] = ctools
+dependencies[] = conditional_styles
+dependencies[] = date
+dependencies[] = date_api
+dependencies[] = date_popup
+dependencies[] = date_tools
+dependencies[] = date_views
+dependencies[] = invisimail
+dependencies[] = rules
+dependencies[] = taxonomy_menu
+dependencies[] = token
+dependencies[] = entity
+
+; Webform
+dependencies[] = webform
+
+; SEO 
+dependencies[] = redirect
+dependencies[] = metatag
+dependencies[] = metatag_views
+dependencies[] = metatag_context
+dependencies[] = pathauto
+dependencies[] = transliteration
+dependencies[] = xmlsitemap
+dependencies[] = xmlsitemap_custom
+dependencies[] = xmlsitemap_engines
+dependencies[] = xmlsitemap_menu
+dependencies[] = xmlsitemap_node
+dependencies[] = xmlsitemap_taxonomy
+
+; User Interface
+dependencies[] = admin_menu
+dependencies[] = logintoboggan
+dependencies[] = menu_block
+dependencies[] = userprotect
+
+; Views
+dependencies[] = views
+dependencies[] = views_ui
+
+; Omega Tools
+dependencies[] = omega_tools
+dependencies[] = delta
+dependencies[] = delta_blocks
+dependencies[] = delta_ui
+
+; Context
+dependencies[] = context
+dependencies[] = context_layouts
+dependencies[] = context_ui
+
+; Display Suite
+dependencies[] = ds
+dependencies[] = ds_ui
+dependencies[] = ds_search
+dependencies[] = ds_forms
+dependencies[] = ds_format
+dependencies[] = ds_extras
+
+dependencies[] = field_word_boundary
+dependencies[] = login_destination
+dependencies[] = custom_formatters
+dependencies[] = file_entity
+dependencies[] = adaptive_image
+dependencies[] = field_collection
+dependencies[] = mollom
+dependencies[] = nice_menus
+dependencies[] = special_menu_items
+dependencies[] = module_filter
+dependencies[] = chart
+dependencies[] = google_analytics_reports
+dependencies[] = block_class
+dependencies[] = image_url_formatter
+dependencies[] = browserclass
+dependencies[] = entityreference
+dependencies[] = taxonomy_filter
+dependencies[] = field_formatter_settings
+dependencies[] = speedy
+dependencies[] = date_popup_authored
+dependencies[] = save_draft
+dependencies[] = publish_date
+dependencies[] = ccl
+dependencies[] = weight
+dependencies[] = realname
+dependencies[] = email_registration
+dependencies[] = search404
+dependencies[] = linkimagefield
+dependencies[] = fontyourface
+dependencies[] = fontyourface_ui
+dependencies[] = google_fonts_api
+dependencies[] = image_url_formatter
+dependencies[] = insert
+dependencies[] = ie6update
+dependencies[] = views_ui_basic
+
+dependencies[] = colorbox
+dependencies[] = colorbox_node
+
+; Dependent Files
+files[] = vs_drupal7_install.profile
+
+
+; Information added by drush on 2013-09-09
+version = "unknown"
+project = "vs_drupal7_install"
+datestamp = "1378684578"
+

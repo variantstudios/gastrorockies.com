@@ -1,0 +1,80 @@
+@import "breakpoint";
+@import "singularitygs";
+
+
+body {
+  background: #fff;
+  margin: 0 auto;
+}
+
+#header {
+  @include grid-span (1, 1);
+  @include breakpoint($tablet) {
+    @include grid-span (6, 1);
+  }
+  @include breakpoint($desktop) {
+    @include grid-span (3, 1);
+  }
+}
+
+nav {
+  @include grid-span (1, 1);
+  @include breakpoint($tablet) {
+    @include grid-span (6, 7);
+  }
+  @include breakpoint($desktop) {
+    @include grid-span (9, 4);
+  }
+}
+
+
+.logged-in .page {
+  margin-top: 60px;
+}
+.page {
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+  /*@include background-grid;*/
+  @include breakpoint($tablet) {
+    max-width: $tablet;
+  }
+  @include breakpoint($desktop) {
+    max-width: $desktop;
+  }
+  @include breakpoint($lg-desktop) {
+    max-width: $lg-desktop;
+  }
+}
+
+#main {
+  @include grid-span (1, 1);
+  padding: 40px 0;
+  clear: both;
+  @include breakpoint($tablet) {
+    @include grid-span (12, 1);
+    clear: both;
+  }
+  @include breakpoint($desktop) {
+    @include grid-span (9, 4);
+  }
+}
+
+.node-blog-post.node-teaser, .node-blog-post.view-mode-full {
+  @include grid-span (1);
+  /*@include background-grid;*/
+  .ds-col-one {
+    @include breakpoint($tablet) {
+      @include grid-span (1.5, 1);
+    }
+  }
+  .ds-col-two {
+    @include breakpoint($tablet) {
+      @include grid-span (9.5, 3);
+    }
+  }
+}
+
+footer {
+
+}

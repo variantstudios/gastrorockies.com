@@ -1,0 +1,63 @@
+@import 'partials/global/variables';
+@import 'partials/global/mixins';
+
+.sidebar {
+  margin: 0 0 30px;
+  h2 {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+}
+
+.request-quote {
+  p:first-child {
+    @include breakpoints(tablet) {
+      float: left;
+      width: 60%;
+      margin: 0;
+    }
+     @include breakpoints(phone) {
+      float: left;
+      width: 60%;
+      margin: 0;
+    }
+
+  }
+  img {
+   @include breakpoints(phone) {
+      float: right;
+      width: 35%;
+    }
+    @include breakpoints(tablet) {
+      float: right;
+      width: 35%;
+      /* padding-top: 15px; */
+    }
+
+  }
+}
+
+.ie8, .ie7 {
+    .request-quote {
+      p:first-child {
+          float: left;
+          width: 60%;
+          margin: 0;
+        }
+      img {
+          float: right;
+          width: 35%;
+          /* padding-top: 15px; */
+      }
+    }
+
+}
+/* FIXED HEIGHT NEWS BLOCK */
+#block-block-3 .content {
+	height: 400px;
+	overflow-y: scroll;
+	font {
+  	font-size: 17px !important;
+	}
+}

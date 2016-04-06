@@ -1,0 +1,411 @@
+@import 'partials/global/variables';
+@import 'partials/global/mixins';
+@import 'partials/global/sprites';
+
+@import "breakpoint";
+@import "singularitygs";
+
+/* ------- SLIDER STYLES --------- */
+
+
+	.front {
+	  .header-img {
+	  	height: 305px;
+	  	width: 100%;
+	  	overflow: hidden;
+	  	z-index: -99;
+	  	text-align: center;
+	  	background: #050C14;
+	  	border-bottom: 5px solid #F5E08D;
+	  	@include breakpoints(tablet) {  
+	  		height: 555px;
+	  		width: 100%;
+	  	}
+	  }
+	}
+	.front {
+		.site-header {
+		  height: 305px;
+	  	@include breakpoints(tablet) {
+	  		height: 555px;
+	  		position: relative;
+			}
+		}
+	}
+
+
+
+/* ------- INTRO CONTENT STYLES --------- */
+
+		.front {
+		
+		  @include breakpoint($tablet-down) {
+			  .front-intro-block {
+				  display: none;
+			  }
+			  .mobile-front-intro {
+				  display: block;
+			  }
+		  }
+			@include breakpoint($desktop) {
+			  .mobile-front-intro {
+				  display: none;
+			  }
+			  .view-header-banner-images > .content {
+			    position: relative;
+			    height: 555px; 
+			    width: 100%;
+			  }
+		  }	  
+		.view-header-banner-images.view-display-id-block_2 {
+			@include breakpoint($desktop) {
+				background: rgba(255, 255, 255, 0.84);
+				position: absolute;
+				top: auto;
+				z-index: 9999;
+				bottom: 0;
+				width: 100%;
+				padding: 10px 0;
+			}
+			.attachment {
+			  .site-name {
+			    @include breakpoint($phone) {
+				    margin: 0px -20px 0px;
+						display: block;
+						background: rgba(255, 255, 255, 0.8);
+						padding: 20px 0;
+						position: absolute;
+						width: 100%;
+						bottom: 0;
+			    }
+			    @include breakpoints(tablet) {
+					  float: left;
+				  }
+			  }
+			 }
+				.view-header-banner-images {
+				  @include breakpoints(tablet) {
+						float: right;
+						width: 63%;
+						padding: 20px;
+						text-align: left;
+					}
+					@include breakpoints(desktop) {
+						width: 73%;
+					}
+					@include breakpoints(lg-desktop) {
+						width: 75%;
+					}
+					h1 {
+					   @include breakpoint($tablet) {
+  					 
+							padding-bottom: 10px;
+						}
+						
+					}
+					p {
+  					font-size: 120%;
+  					margin-top: 0.2em;
+  					@include breakpoint($tablet) {
+    					font-size: 98%;
+  					}
+  					@include breakpoint($desktop) {
+    					font-size: 105%;
+  					}
+					}
+				}
+		}
+		
+		#block-views-header-banner-images-block-2.contextual-links-region {
+			position: static;
+		}
+	}
+
+
+
+/* ------- FRONT BLOCKS -------- */
+
+	.front-blocks {
+		@include breakpoints(phone) {
+			border-top: 1px solid #ccc;
+			margin-top: 20px;
+			border-bottom: 1px solid #ccc;
+			padding-bottom: 20px;
+		}
+	}
+	
+	.front-rows {
+	  @include breakpoint($phone) {
+		  .read-more-link a {
+				font-size: 16px;
+				text-decoration: none;
+				color: #FFF;
+				padding: 5px 35px;
+				display: block;
+				cursor: pointer;
+				-webkit-border-radius: 7px;
+				-moz-border-radius: 7px;
+				-ms-border-radius: 7px;
+				-o-border-radius: 7px;
+				border-radius: 7px;
+				width: 100%;
+				text-align: center;
+				margin-bottom: 10px;
+				background: #6e1c1e;
+				text-transform: none;
+				font-weight: normal;
+		  }
+	  }
+	  @include breakpoints(tablet) {
+		  width: 49%;
+			vertical-align: top;
+			display: inline-block;
+			padding-right: 25px;
+	  }
+		@include breakpoints(desktop) {
+			padding-right: 25px;
+			width: 100%;
+			display: block;
+		}
+		@include breakpoints(lg-desktop) {
+			width: 49%;
+			vertical-align: top;
+			display: inline-block;
+			padding-right: 25px;
+			margin-bottom: 10px;
+		}
+		.read-more-link {
+		  @include breakpoint($tablet) {
+			  margin-top: 15px;
+			}
+			@include breakpoint($tablet) {
+				a {
+					padding: 0;
+					font-weight: normal;
+				}
+			}
+		}
+		h4, p {
+			@include breakpoints(phone) {
+				display: none;
+			}
+		}
+	}
+
+
+
+
+/* ------- LOCATION SIDEBAR -------- */
+
+	/* -- LOCATION SLIDER -- */
+	.location-slider {
+	   position: relative;
+	   &:before {
+		   content: '';
+			  display: inline-block;
+				@include get-sprite($icons, locations);
+				float: left;
+				border-radius: 0 20px 0 0;
+				z-index: 10;
+				margin-top: -8px;
+				@include breakpoints(desktop) {
+					background-color: #fafafa;
+					position: absolute;
+					bottom: 90px;
+					float: none;
+					margin-top: 0;
+				}
+	   }
+	  .views-slideshow-cycle-main-frame, .views_slideshow_slide {
+		  width: auto !important;
+		  height: auto !important;
+	  }
+	  .view-content {
+			  padding-bottom: 240px;
+		  @include breakpoints(desktop) {
+			  padding-bottom: 300px;
+		  }
+		   @include breakpoints(lg-desktop) {
+			  padding-bottom: 340px;
+		  }
+	  }
+		img {
+			border-radius: 30px;
+		}
+	}
+	
+	/* -- LOCATION ATTACHMENT -- */
+	.our-locations-front {
+	  .attachment .view-content {
+		  @include breakpoints(tablet-down) {
+			  display: none;
+		  }
+	  }
+		.view-footer {
+			h4 {
+				@include breakpoints(tablet-down) {
+					margin-left: 110px;
+					margin-bottom: 30px;
+				}
+			}
+		}
+
+		.view-content {
+		  @include breakpoints(tablet) {
+		   margin-left: 110px;
+		  }
+		  @include breakpoints(desktop) {
+		   margin-left: 0px;
+		  }
+		}
+	}
+	
+	/* -- LOCATION LISTING ROWS -- */
+	.location-rows {
+		@include breakpoints(phone) {
+			padding-bottom: 15px;
+		}
+		@include breakpoints(tablet) {
+			width: 49%;
+			vertical-align: top;
+			display: inline-block;
+			padding-right: 25px;
+			padding-bottom: 25px;
+		}
+		p {
+  		margin: .2em 0 1em 0;
+  		font-size: 90%;
+		}
+		h6 {
+  		margin: 0;
+		}
+	}
+
+/*
+
+$phone: 0 767px;
+$tablet-down: 0 979px;
+$tablet: 768px;
+$desktop: 980px, 'no-query' '.ie8';
+$lg-desktop: 1200px;
+
+*/
+
+
+/* ------- FRONT NEWS BLOCK -------- */
+	.front-news {
+		margin: 50px 0 0;
+		border: 1px solid #ddd;
+	  border-bottom: 4px solid #f5e08d;
+		.news-image {
+		  @include breakpoint($phone) {
+				  display: none;
+		  }
+			//tablet
+			@media all and (min-width: 768px) {
+		    	width: 48%;
+				display: inline-block;
+			}
+			//@include breakpoints($desktop) {	
+			@media all and (min-width: 980px) {
+				width: 57%;
+			}
+			//@include breakpoints($lg-desktop) {	
+			@media all and (min-width: 1200px) {	
+				width: 48%;
+			}
+		}
+		.news-content {
+		  padding: 20px;
+		  display: inline-block;
+		  vertical-align: top;
+			//tablet
+			@media all and (min-width: 768px) {
+		    	width: 50%;
+			}
+			//@include breakpoints($desktop) {	
+			@media all and (min-width: 980px) {
+				width: 40%;
+			}
+			//@include breakpoints($lg-desktop) {	
+			@media all and (min-width: 1200px) {	
+				width: 50%;
+			}
+
+/*
+			@include breakpoints($tablet) {		
+		    	width: 50%;
+				vertical-align: top;
+				padding: 20px 25px;
+			}
+			@include breakpoints($desktop) {	
+				width: 50%;
+			}
+*/
+			
+			p > a {
+				display: block;
+				padding-top: 7px;
+			}
+		}
+		h4 {
+			margin-top: 0;
+		}
+		h5 > a {
+	    color: #666;
+	    font-weight: 700;
+	    font-size: 22px;
+	    margin-top: 10px;
+	    margin-bottom: 0;
+		}
+		h6 {
+			border-bottom: 1px solid $color-two;
+			padding: 0px 0 10px;
+			margin-bottom: 10px;
+			font-weight: 300;
+			margin-top: 0;
+			a {
+  			color: $body;
+			}
+		}
+	}
+	
+	.front-blocks {
+	  .view-content {
+			.front-rows {
+			  &:first-child {
+					h4 {
+					  vertical-align: top;
+						&:after {
+						  content: '';
+						  display: inline-block;
+							@include get-sprite($icons, appointments);
+							float: right;
+						}
+					}
+				}
+			  &:last-child {
+					h4 {
+					  vertical-align: top;
+						&:after {
+						  content: '';
+						  display: inline-block;
+							@include get-sprite($icons, providers);
+							float: right;
+						}
+					}
+				}
+			}
+		}
+		p {
+			margin: 10px 0 0;
+		}
+	}
+
+@include breakpoints(phone) {		
+	.header-img {
+		#block-views-header-images-block-2 {
+			display: none;
+		}
+	}
+}

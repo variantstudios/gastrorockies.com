@@ -1,0 +1,17 @@
+name = Providers Section
+core = 7.x
+package = Site Sections
+dependencies[] = context
+dependencies[] = strongarm
+dependencies[] = views
+dependencies[] = vs_providers
+features[context][] = providers_section
+features[ctools][] = context:context:3
+features[ctools][] = strongarm:strongarm:1
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:2
+features[variable][] = weight_default_providers
+features[variable][] = weight_enabled_providers
+features[variable][] = weight_menu_providers
+features[views_view][] = providers_view
+features_exclude[dependencies][ctools] = ctools

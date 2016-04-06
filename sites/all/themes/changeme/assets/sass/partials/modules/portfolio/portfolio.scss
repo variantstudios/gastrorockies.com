@@ -1,0 +1,30 @@
+@import 'partials/global/variables';
+@import 'partials/global/mixins';
+@import "compass/css3";
+
+.latest-work {
+  margin: 60px 0;
+}
+
+
+.page-portfolio {
+  .portfolio-item {
+    @include breakpoints(tablet) {
+      float: left;
+      &:nth-child(odd) {
+        margin-right: 15px;
+      }
+    }
+  }
+}
+
+.node-project.view-mode-full {
+  .read-more-btn {
+    margin-bottom: 100px;
+    margin-top: 40px;
+  }
+  img {
+     box-shadow: 0 4px 5px rgba(1, 1, 1, 0.1);
+     -webkit-box-shadow: 0 4px 5px rgba(1, 1, 1, 0.1);
+  }
+}

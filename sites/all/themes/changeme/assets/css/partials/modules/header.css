@@ -1,0 +1,31 @@
+/* -- BREAKPOINTS -- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/variant\/public_html\/beta\/sites\/all\/themes\/vs\/icons\/\*\.png}line{font-family:\0000358}}
+.icons-sprite, #site-name h1 {
+  background: url('../../../images/icons-see36578b11.png') no-repeat;
+}
+
+/* -- Logo -- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/variant\/public_html\/beta\/sites\/all\/themes\/vs\/sass\/partials\/modules\/header\.scss}line{font-family:\000039}}
+#site-name {
+  margin: 40px 0 0;
+  display: inline-block;
+  border-bottom: 6px solid #000;
+}
+@media all and (max-width: 760px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/variant\/public_html\/beta\/sites\/all\/themes\/vs\/sass\/partials\/modules\/header\.scss}line{font-family:\000039}}
+  #site-name {
+    text-align: center;
+    margin-bottom: 0;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/variant\/public_html\/beta\/sites\/all\/themes\/vs\/sass\/partials\/modules\/header\.scss}line{font-family:\0000318}}
+#site-name h1 {
+  margin: 20px 0;
+  text-indent: 150%;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  background-position: 0 0;
+  height: 29px;
+  width: 232px;
+}

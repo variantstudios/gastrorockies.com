@@ -1,0 +1,7 @@
+<?php
+function vs_body_class_role_preprocess_html ( &$variables ) {
+  global $user;
+  foreach ( $user->roles as $role_id => $role ) {
+    $variables['classes_array'][] = "role-".strtolower(drupal_clean_css_identifier($role));
+  }
+}

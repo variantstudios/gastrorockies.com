@@ -1,0 +1,40 @@
+/*! http://responsiveslides.com v1.54 by @viljamis */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/variant\/public_html\/beta\/sites\/all\/themes\/vs\/sass\/partials\/modules\/slider\.scss}line{font-family:\000033}}
+.rslides ul {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/variant\/public_html\/beta\/sites\/all\/themes\/vs\/sass\/partials\/modules\/slider\.scss}line{font-family:\0000312}}
+.rslides ul li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  padding-bottom: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/variant\/public_html\/beta\/sites\/all\/themes\/vs\/sass\/partials\/modules\/slider\.scss}line{font-family:\0000322}}
+.rslides ul li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/variant\/public_html\/beta\/sites\/all\/themes\/vs\/sass\/partials\/modules\/slider\.scss}line{font-family:\0000328}}
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100% !important;
+  border: 0;
+  min-width: 100% !important;
+  padding: 0;
+  margin: 0;
+}

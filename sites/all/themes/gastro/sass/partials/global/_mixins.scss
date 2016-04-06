@@ -1,0 +1,95 @@
+////////////////////////
+// Mixins Partials
+//
+// All of your mixins should go in this file.
+////////////////////////
+
+@import 'partials/global/variables';
+
+
+@mixin hide-text {
+  text-indent: 150%;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+}
+
+@mixin body {
+  color: $body;
+  font-family: "proxima-nova", sans-serif;
+  font-size: 17px;
+  line-height: 1.4;
+}
+
+@mixin heading {
+  color: $accent-three;
+  font-family: "proxima-nova", sans-serif;
+  font-size: 36px;
+  font-weight: 300;
+  margin: 0 0 10px;
+}
+
+@mixin subheading {
+  color: $accent-four;
+  font-family: "proxima-nova", sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+@mixin link {
+  font-family: "proxima-nova", sans-serif;
+  color: #691C16;
+  font-weight: 600;
+  font-style: italic;
+}
+
+@mixin read-more {
+	   background: $color-two;
+    padding: 7px 25px;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    @include animate-all-on-hover;
+    border-radius: 3px;
+    &:hover {
+      background: $color-four;
+      color: $color-two;
+    }
+}
+@mixin clearfix {
+  &:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+  }
+}
+
+@mixin animate-all-on-hover {
+  transition: all .2s linear; 
+  -webkit-transition: all .2s linear; 
+  -moz-transition: all .2s linear;
+}
+
+/* -- BREAKPOINTS -- */
+@mixin breakpoints($point) {
+  @if $point == phone {
+    @media all and (max-width: 760px) { @content; }
+  }
+  @else if $point == tablet-down {
+    @media all and (max-width: 979px) { @content; }
+  }
+  @else if $point == tablet {
+    @media all and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation:landscape) { @content; }
+  }
+  @else if $point == desktop {
+    @media all and (min-width: 980px) and (min-device-width: 980px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation:landscape) { @content; }
+  }
+  @else if $point == lg-desktop {
+    @media all and (min-width: 1220px)  { @content; }
+  }
+}

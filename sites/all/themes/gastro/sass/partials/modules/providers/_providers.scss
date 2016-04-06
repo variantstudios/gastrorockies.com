@@ -1,0 +1,41 @@
+@import 'partials/global/variables';
+@import 'partials/global/mixins';
+@import "compass/css3";
+
+.our-providers {
+	.views-row {
+	  margin: 20px 0;
+		@include breakpoints(tablet) {
+			display: inline-block;
+			width: 29%;
+			vertical-align: top;
+			margin: 20px 2% 20px 0;
+		}
+		@include breakpoints(lg-desktop) {
+			margin: 20px 3% 20px 0;
+		}
+		.node-providers.node-teaser {
+			border: 1px solid #ddd;
+		}
+		h5, p {
+			padding: 0 10px;
+			margin: 0;
+		}
+		h5 > a {
+			color: $color-two;
+			font-weight: 700;
+		}
+	}
+}
+
+.node-providers.view-mode-full {
+  .ds-col-two {
+	  img {
+	    padding: 20px;
+	    @include breakpoints(tablet) {
+		    float: right;
+		    padding: 0 0 20px 20px;
+		  }
+	  }
+  }
+}

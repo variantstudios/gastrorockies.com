@@ -1,0 +1,8 @@
+Webform Reply-To 7.x-1.x-dev, 2012-03-15
+----------------------------------------
+by jerry: Removed LICENSE.txt from repository; will be added by packaging script.
+by jerry: Added .module file to files option in .info file for D7.
+
+Webform Reply-To 7.x-1.0, 2012-02-07
+------------------------------------
+Issue #1302794 by opteronmx, jerry: Ported from 6.x version.

@@ -1,0 +1,31 @@
+////////////////////////
+// Variables Partials
+//
+// All of your variables should go in this file.
+////////////////////////
+
+@import "breakpoint";
+@import "singularitygs";
+
+
+$phone: 0 760px;
+$tablet: 768px;
+$desktop: 980px;
+$lg-desktop: 1200px;
+
+$grids: 1;
+$grids: add-grid(12 at 768px);
+$grids: add-grid(12 at 980px);
+$gutters: 1/4;
+
+$accent-one: #E6E6E6;
+$accent-two: #B3B3B3;
+$accent-three: #4D4D4D;
+$accent-four: #691C16;
+$body: #6d6e71;
+$headings: #000;
+
+$color-one: rgb(80,163,226); // BLue
+$color-two: rgb(58,58,58); // Dark Gray
+$color-three: rgb(150,202,45); // Green Lime
+$color-four: #4BB5C1; // Lighter Green for hover

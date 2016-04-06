@@ -1,0 +1,36 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/lib\/ruby\/gems\/1\.8\/gems\/singularitygs-1\.1\.2\/stylesheets\/singularitygs\/helpers\/_box-sizing\.scss}line{font-family:\0000334}}
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/lib\/ruby\/gems\/1\.8\/gems\/toolkit-1\.3\.8\/stylesheets\/toolkit\/_box-sizing\.scss}line{font-family:\0000336}}
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/lib\/ruby\/gems\/1\.8\/gems\/toolkit-1\.3\.8\/stylesheets\/toolkit\/_fluid-media\.scss}line{font-family:\000034}}
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* -- BREAKPOINTS -- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gastro\/beta-ver-1\/sites\/all\/themes\/gastro\/sass\/partials\/global\/_extendables\.scss}line{font-family:\0000314}}
+.clearfix:before, .clearfix:after {
+  display: table;
+  content: "";
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gastro\/beta-ver-1\/sites\/all\/themes\/gastro\/sass\/partials\/global\/_extendables\.scss}line{font-family:\0000319}}
+.clearfix:after {
+  clear: both;
+}
+
+/* -- BREAKPOINTS -- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gastro\/beta-ver-1\/sites\/all\/themes\/gastro\/sass\/partials\/modules\/services\/services\.scss}line{font-family:\000036}}
+.services .service-item {
+  margin-bottom: 60px;
+}

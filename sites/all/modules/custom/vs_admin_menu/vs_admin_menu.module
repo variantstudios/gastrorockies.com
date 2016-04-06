@@ -1,0 +1,75 @@
+<?php
+function vs_admin_menu_help($path, $arg) {
+    switch ($path) {
+        case "admin/help#textblock":
+            return '<p>'.  ("This is a simple admin menu for site managers.") .'</p>';
+            break;
+    }
+}
+
+/**
+ * Declare what blocks are provided by this module.
+ * Implements hook_block_info().
+ */
+
+function vs_admin_menu_block_info() {
+    $blocks = array();
+    $blocks['vs_admin_menu_block'] = array(
+    'info' => t('VS Admin Menu Block'),
+    );
+    return $blocks;
+}
+ 
+/**
+ * Implementation of hook_init().
+ */
+function vs_admin_menu_init() {
+
+    global $user;
+    // Only attache the JS and CSS for user's logged in with the manager role. 
+    $allowed_roles = array('manager');
+
+    if(count(array_intersect($user->roles, $allowed_roles)) > 0){
+        // Drupal 7: Add our own CSS and JS to the site.
+      drupal_add_js(drupal_get_path('module', 'vs_admin_menu') . '/js/classie.js', array('scope' => 'header'));
+      drupal_add_js(drupal_get_path('module', 'vs_admin_menu') . '/js/gnmenu.js', array('scope' => 'header'));
+      drupal_add_css(drupal_get_path('module', 'vs_admin_menu') . '/css/component.css', array('scope' => 'header'));
+    }
+
+}
+
+
+function vs_admin_menu_block_configure($delta = '') {
+    $form = array();
+    if ($delta == 'vs_admin_menu_block') {
+ 
+        $form['vs_admin_menu_block'] = array(
+        '#type' => 'fieldset',
+        '#title' => t('Please enter the text below'),
+        );
+     
+        $form['vs_admin_menu_block']['vs_admin_menu_block_full_text'] = array(
+        '#type' => 'textarea',
+        '#title' => t('Text'),
+        '#default_value' => variable_get('vs_admin_menu_block_full_text', ''),
+    );
+    }
+    return $form;
+}
+
+
+function vs_admin_menu_block_save($delta = '', $edit = array()) {
+    if ($delta == 'vs_admin_menu_block') {
+        variable_set('vs_admin_menu_block_full_text', $edit['vs_admin_menu_block_full_text']);
+    }
+}
+
+function vs_admin_menu_block_view($delta = '') {
+    if ($delta == 'vs_admin_menu_block') {
+        $content = variable_get('vs_admin_menu_block_full_text', '');
+        $block = array(
+        'content' => $content,
+        );
+        return $block;
+    }
+}

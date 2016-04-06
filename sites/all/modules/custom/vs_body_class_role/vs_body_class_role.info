@@ -1,0 +1,5 @@
+name = VS Body Class Role
+description = This module will add the user's role as a class to the body.
+core = 7.x
+package = VS Custom Modules
+files[] = vs_body_class_role.module

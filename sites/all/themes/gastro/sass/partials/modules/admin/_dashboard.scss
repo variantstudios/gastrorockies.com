@@ -1,0 +1,94 @@
+@import "breakpoint";
+@import 'partials/global/mixins';
+@import 'partials/global/variables';
+
+.dashboard-block {
+	border: 1px solid #ccc;
+	margin: 30px 0;
+	border-radius: 3px;
+	h2 {
+		border-bottom: 1px solid #6e1c1e;
+		padding-bottom: 10px;
+		font-weight: 300;
+		padding-left: 20px;
+		padding-top: 10px;
+		font-size: 26px;
+	}
+	.views-row {
+		padding: 10px 20px;
+		@include clearfix;
+		&.views-row-odd {
+			background: #fafafa;
+		}
+		h5 {
+			font-size: 18px;
+			margin: 0;
+			font-weight: 500;
+			@include breakpoint($desktop) {
+			  display: inline-block;
+			}
+			a {
+				color: #555;
+				text-decoration: none;
+			}
+		}
+	}
+	.recent-content-details {
+		@include breakpoint($desktop) {
+		  display: inline-block;
+		  float: right;
+		}
+	  span {
+		  font-style: italic;
+			padding-right: 15px;
+			font-size: 18px;
+			a {
+				color: #777;
+			}
+	  }
+	}
+
+}
+
+.dashboard-block-sidebar {
+		.nice-menu {
+		margin: 0;
+		padding: 0px;
+		li {
+			list-style: none;
+			display: block;
+			padding: 0;
+			a {
+				@include read-more;
+				padding: 5px 20px;
+				margin: 10px 0;
+				margin-right: 20px;
+				&:before {
+					content: '+';
+					padding: 0 10px 0 0;
+				}
+			}
+		}
+	}
+}
+
+
+.dashboard-element {
+  border-bottom: 1px solid #ccc;
+	padding-bottom: 7px;
+	padding-top: 7px;
+	.dashboard-value {
+	  float: right;
+		a, span {
+			background: #B6B6B6;
+			padding: 0px 14px;
+			border-radius: 17px;
+			font-size: 15px;
+			text-decoration: none;
+			color: #fff;
+			font-weight: normal;
+			margin-right: 15px;
+			font-size: normal;
+		}
+	}
+}

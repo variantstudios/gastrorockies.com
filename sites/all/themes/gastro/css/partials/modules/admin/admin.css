@@ -1,0 +1,99 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/lib\/ruby\/gems\/1\.8\/gems\/singularitygs-1\.1\.2\/stylesheets\/singularitygs\/helpers\/_box-sizing\.scss}line{font-family:\0000334}}
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/lib\/ruby\/gems\/1\.8\/gems\/toolkit-1\.3\.8\/stylesheets\/toolkit\/_box-sizing\.scss}line{font-family:\0000336}}
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/lib\/ruby\/gems\/1\.8\/gems\/toolkit-1\.3\.8\/stylesheets\/toolkit\/_fluid-media\.scss}line{font-family:\000034}}
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* -- BREAKPOINTS -- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gastro\/beta-ver-1\/sites\/all\/themes\/gastro\/sass\/partials\/global\/_extendables\.scss}line{font-family:\0000314}}
+.clearfix:before, .clearfix:after {
+  display: table;
+  content: "";
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gastro\/beta-ver-1\/sites\/all\/themes\/gastro\/sass\/partials\/global\/_extendables\.scss}line{font-family:\0000319}}
+.clearfix:after {
+  clear: both;
+}
+
+/* -- BREAKPOINTS -- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gastro\/beta-ver-1\/sites\/all\/themes\/gastro\/sass\/partials\/modules\/admin\/admin\.scss}line{font-family:\000035}}
+#admin-menu, #admin-menu .dropdown, #admin-menu ul li, #admin-menu a {
+  font-family: "Lucida Grande", Verdana, sans-serif;
+  font-size: 13px !important;
+  line-height: 1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gastro\/beta-ver-1\/sites\/all\/themes\/gastro\/sass\/partials\/modules\/admin\/admin\.scss}line{font-family:\0000313}}
+.contextual-links, .contextual-links li, .contextual-links a {
+  font-family: "Lucida Grande", Verdana, sans-serif !important;
+  font-size: 13px !important;
+  line-height: 1 !important;
+  background-color: #fff;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gastro\/beta-ver-1\/sites\/all\/themes\/gastro\/sass\/partials\/modules\/admin\/admin\.scss}line{font-family:\0000321}}
+#tabs ul.tabs.primary {
+  margin: 0 0 30px;
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gastro\/beta-ver-1\/sites\/all\/themes\/gastro\/sass\/partials\/modules\/admin\/admin\.scss}line{font-family:\0000324}}
+#tabs ul.tabs.primary li {
+  padding-bottom: 0;
+  display: inline-block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gastro\/beta-ver-1\/sites\/all\/themes\/gastro\/sass\/partials\/modules\/admin\/admin\.scss}line{font-family:\0000327}}
+#tabs ul.tabs.primary li a {
+  margin-right: 0;
+  padding: 5px 24px 3px;
+  border-radius: 3px 3px 0 0;
+  color: #222;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gastro\/beta-ver-1\/sites\/all\/themes\/gastro\/sass\/partials\/modules\/admin\/admin\.scss}line{font-family:\0000332}}
+#tabs ul.tabs.primary li a.active {
+  background: #fff;
+  color: #777;
+}
+
+/*html body.admin-menu {
+	margin-top: 43px !important;
+}
+#admin-menu {
+	background: #ccc;
+  box-shadow: none;
+  #admin-menu-wrapper {
+	  padding: 0px;
+  }
+  #admin-menu-menu {
+	  li {
+		  a {
+			  background: #ddd;
+			  border-radius: 0;
+			  color: #333;
+			  padding: 10px 13px;
+			  margin: 0;
+		  }
+	  }
+  }
+  #admin-menu-icon {
+	  .admin-menu-icon {
+		  padding: 12px 10px 7px;
+			background: #AD4F4F;
+
+	  }
+  }
+}
+*/

@@ -1,0 +1,75 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/lib\/ruby\/gems\/1\.8\/gems\/singularitygs-1\.1\.2\/stylesheets\/singularitygs\/helpers\/_box-sizing\.scss}line{font-family:\0000334}}
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/lib\/ruby\/gems\/1\.8\/gems\/toolkit-1\.3\.8\/stylesheets\/toolkit\/_box-sizing\.scss}line{font-family:\0000336}}
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/lib\/ruby\/gems\/1\.8\/gems\/toolkit-1\.3\.8\/stylesheets\/toolkit\/_fluid-media\.scss}line{font-family:\000034}}
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* -- BREAKPOINTS -- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/variant\/public_html\/beta\/sites\/all\/themes\/vs\/sass\/partials\/global\/_extendables\.scss}line{font-family:\0000314}}
+.clearfix:before, .clearfix:after {
+  display: table;
+  content: "";
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/variant\/public_html\/beta\/sites\/all\/themes\/vs\/sass\/partials\/global\/_extendables\.scss}line{font-family:\0000319}}
+.clearfix:after {
+  clear: both;
+}
+
+/* -- BREAKPOINTS -- */
+@media all and (min-width: 980px) and (min-device-width: 980px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation: landscape) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/variant\/public_html\/beta\/sites\/all\/themes\/vs\/sass\/partials\/modules\/navigation\/nav\.scss}line{font-family:\000036}}
+  nav {
+    padding: 45px 0;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/variant\/public_html\/beta\/sites\/all\/themes\/vs\/sass\/partials\/modules\/navigation\/nav\.scss}line{font-family:\0000310}}
+nav ul {
+  padding: 0;
+  text-align: center;
+}
+@media all and (min-width: 980px) and (min-device-width: 980px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation: landscape) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/variant\/public_html\/beta\/sites\/all\/themes\/vs\/sass\/partials\/modules\/navigation\/nav\.scss}line{font-family:\0000310}}
+  nav ul {
+    float: right;
+    text-align: left;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/variant\/public_html\/beta\/sites\/all\/themes\/vs\/sass\/partials\/modules\/navigation\/nav\.scss}line{font-family:\0000317}}
+nav ul li, nav ul li.leaf, nav ul li.collapsed {
+  float: left;
+  list-style: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/variant\/public_html\/beta\/sites\/all\/themes\/vs\/sass\/partials\/modules\/navigation\/nav\.scss}line{font-family:\0000322}}
+nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 17px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/variant\/public_html\/beta\/sites\/all\/themes\/vs\/sass\/partials\/modules\/navigation\/nav\.scss}line{font-family:\0000329}}
+nav a.active {
+  border-bottom: 4px solid #000;
+  padding-bottom: 10px;
+}
+@media all and (min-width: 980px) and (min-device-width: 980px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation: landscape) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/variant\/public_html\/beta\/sites\/all\/themes\/vs\/sass\/partials\/modules\/navigation\/nav\.scss}line{font-family:\0000322}}
+  nav a {
+    font-size: 18px;
+  }
+}

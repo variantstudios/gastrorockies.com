@@ -1,0 +1,9 @@
+@import 'partials/global/base';
+@import 'partials/global/mixins';
+@import 'partials/global/variables';
+
+.services {
+	.service-item {
+		margin-bottom: 60px;
+	}
+}

@@ -1,0 +1,121 @@
+@import 'partials/global/variables';
+@import 'partials/global/mixins';
+
+
+
+@mixin body {
+  color: $body;
+  font-family: "proxima-nova-1","proxima-nova-2",sans-serif;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+@mixin page-heading {
+  color: $headings;
+  font-family: "futura-pt-1","futura-pt-2",sans-serif;
+  font-size: 85px;
+  font-weight: normal;
+  margin: 0;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+@mixin sub-heading {
+  color: $headings;
+  font-family: "aktiv-grotesk-std-1","aktiv-grotesk-std-2",sans-serif;
+  font-size: 44px;
+  font-weight: 300;
+  margin: 0;
+  line-height: 1.2;
+}
+
+@mixin third-heading {
+  color: $headings;
+  font-family: "futura-pt-1","futura-pt-2",sans-serif;
+  font-size: 40px;
+  font-weight: normal;
+  margin: 0;
+}
+@mixin link {
+  font-family: "proxima-nova", sans-serif;
+  color: #691C16;
+  font-weight: 600;
+  font-style: italic;
+}
+
+
+h1, .page-title {
+  @include page-heading;
+  @include breakpoints(phone) {
+    font-size: 50px;
+    margin: 0 0 15px;
+    line-height: 1;
+  }
+  
+}
+
+h2, .sub-title , .sub-title > span {
+  @include sub-heading;
+    @include breakpoints(phone) {
+    font-size: 36px;
+  }
+}
+
+h3 {
+  color: $headings;
+  font-family: "futura-pt-1","futura-pt-2",sans-serif;
+  font-size: 40px;
+  font-weight: normal;
+  margin: 0;
+}
+
+h4 {
+  color: $headings;
+  font-family: "aktiv-grotesk-std-1","aktiv-grotesk-std-2",sans-serif;
+  font-size: 35px;
+  font-weight: 300;
+  margin: 0;
+}
+
+
+p, span, li, label, select, div {
+  @include body;
+}
+
+ul li, ol li {
+  padding-bottom: 5px;
+}
+p a {
+  color: $headings;
+  font-family: "proxima-nova-1","proxima-nova-2",sans-serif;
+  font-style: italic;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+
+.read-more-btn {
+  a {
+    background: $color-three;
+    padding: 10px 35px;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 35px;
+    @include animate-all-on-hover;
+    &:hover {
+      background: $color-four;
+    }
+    
+  }
+}
+.clearfix {
+  &:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+  }
+}

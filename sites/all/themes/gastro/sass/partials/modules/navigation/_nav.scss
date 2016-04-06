@@ -1,0 +1,110 @@
+@import 'partials/global/base';
+@import 'partials/global/mixins';
+@import 'partials/global/variables';
+@import 'partials/global/sprites';
+
+
+@include breakpoints(desktop) {
+	.mm-menu, #menu-original, .hidden-xs {
+		display: none;
+	}
+	nav.main-navigation {
+	  .main-menu {
+		  float: left;
+		  ul.nice-menu > li > a.active-trail {  		  
+        background: #fafafa;
+        border-left: 1px solid #eee;
+        border-right: 1px solid #eee;
+		  }
+	  }
+	  ul.nice-menu > li:nth-last-child(2) {
+				border-left: 1px solid #ccc;
+				margin-left: 7px;
+
+				a {
+					&:before {
+					  content: '';
+						@include get-sprite($icons, book);
+						float: left;
+						margin: 0px 7px 0;
+						@include breakpoints(lg-desktop) {
+								margin: 1px 10px 0;
+						}
+					}
+				}
+	    }
+			ul.nice-menu > li:nth-last-child(1) {
+				a {
+					&:before {
+					  content: '';
+						@include get-sprite($icons, paitent);
+						float: left;
+						margin: 0px 7px 0;
+						@include breakpoints(lg-desktop) {
+								margin: 1px 10px 0;
+						}
+					}
+				}
+	    }
+	   ul {
+	     padding: 0;
+	     margin: 0;
+	     text-align: left;
+	     z-index: 1000;
+		    li, li.leaf, li.collapsed {
+		      float: left;
+		      list-style: none;
+		      margin: 0;
+		      padding: 0;
+		      position: static;
+		    }
+		    ul {
+			    background: #fff;
+			    padding: 0;
+			    
+					li {
+						display: block;
+						position: relative;
+						float: none;
+						width: 300px;
+						ul {
+							left: 299px;
+							top: 0px;
+						}
+						&.last a{
+							border-bottom: 1px solid #ccc;
+						}
+						a {
+							font-size: 15px;
+							padding: 10px 30px;
+							@include animate-all-on-hover;
+							border: 1px solid #ccc;
+							border-bottom: 0;
+						}
+					}
+		    }
+		  }
+		  a {
+		    text-decoration: none;
+		    text-transform: uppercase;
+		    color: #777;
+		    font-weight: 500;
+		    font-style: normal;
+		    font-size: 16px;
+		    padding: 12px 15px;
+		    @include animate-all-on-hover;
+		    &:hover {
+			    background: #F5F5F5;
+			    @include animate-all-on-hover;
+		    }
+		    @include breakpoints(desktop) {
+			    font-size: 15px;
+			    padding: 21px 10px 21px;
+		    }
+		    @include breakpoints(lg-desktop) {
+			    font-size: 16px;
+			    padding: 21px 15px 21px;
+		    }
+		  }
+		}
+	}

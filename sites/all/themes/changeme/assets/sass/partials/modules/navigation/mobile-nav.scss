@@ -1,0 +1,55 @@
+@import 'partials/global/base';
+@import 'partials/global/mixins';
+@import "icons/*.png";
+
+@include breakpoints(tablet-down) {
+  nav {
+    ul {
+      display: none;
+    }
+  }
+}
+
+
+ #navtoggle {
+    position: absolute;
+    top: 10px;
+    z-index: 999;
+    display: block;
+    left: auto;
+    @include breakpoints(tablet) {
+      right: 0;
+      top: 65px;
+    }
+    span {
+      display: block;
+      height: 31px;
+      width: 31px;
+      @include icons-sprite(open);
+      
+    }
+  }
+  
+  .mobile-bar {
+    @include breakpoints(tablet) {
+      position: relative;
+    }
+    @include breakpoints(desktop) {
+      display: none;
+    }
+  }
+  
+#jPanelMenu-menu {
+  background: #000;
+  margin: 0;
+  padding: 0;
+  li {
+    a {
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+      display: block;
+      padding: 5px 10px;
+    }
+  }
+}

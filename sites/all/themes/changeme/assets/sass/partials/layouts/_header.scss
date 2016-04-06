@@ -1,0 +1,33 @@
+@import "breakpoint";
+@import "singularitygs";
+
+/*.logo-section {
+  @include grid-span (1);
+  @include breakpoint($tablet) {
+    @include grid-span(12);
+    margin-top: 20px;
+    text-align: center;
+  }
+  @include breakpoint($desktop) {
+    @include grid-span (4);
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+  @include breakpoint($lg-desktop) {
+    @include grid-span (4);
+  }
+}
+.main-nav {
+  @include grid-span (1);
+  @include breakpoint($tablet) {
+    @include grid-span (12);
+    text-align: center;
+  }
+  @include breakpoint($desktop) {
+    @include grid-span (8, 5);
+    margin-top: 30px;
+  }
+  @include breakpoint($lg-desktop) {
+    @include grid-span (8, 5);
+  }
+}*/

@@ -1,0 +1,33 @@
+/* -- BREAKPOINTS -- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gastro\/beta-ver-1\/sites\/all\/themes\/gastro\/sass\/partials\/modules\/projects\/projects\.scss}line{font-family:\000036}}
+.projects-thumbs .colorbox {
+  width: 32%;
+  float: left;
+  cursor: -webkit-zoom-in;
+  cursor: -moz-zoom-in;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gastro\/beta-ver-1\/sites\/all\/themes\/gastro\/sass\/partials\/modules\/projects\/projects\.scss}line{font-family:\0000310}}
+.projects-thumbs .colorbox:hover {
+  cursor: -webkit-zoom-in;
+  cursor: -moz-zoom-in;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gastro\/beta-ver-1\/sites\/all\/themes\/gastro\/sass\/partials\/modules\/projects\/projects\.scss}line{font-family:\0000313}}
+.projects-thumbs .colorbox:nth-child(2), .projects-thumbs .colorbox:nth-child(5), .projects-thumbs .colorbox:nth-child(8), .projects-thumbs .colorbox:nth-child(11), .projects-thumbs .colorbox:nth-child(14) {
+  margin: 0 2%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gastro\/beta-ver-1\/sites\/all\/themes\/gastro\/sass\/partials\/modules\/projects\/projects\.scss}line{font-family:\0000319}}
+.colorbox {
+  cursor: -webkit-zoom-in;
+  cursor: -moz-zoom-in;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gastro\/beta-ver-1\/sites\/all\/themes\/gastro\/sass\/partials\/modules\/projects\/projects\.scss}line{font-family:\0000324}}
+.page-projects .views-row {
+  margin-bottom: 60px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gastro\/beta-ver-1\/sites\/all\/themes\/gastro\/sass\/partials\/modules\/projects\/projects\.scss}line{font-family:\0000331}}
+.node-projects h3 {
+  margin: 8px 0 10px;
+}

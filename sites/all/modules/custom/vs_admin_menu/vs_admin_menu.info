@@ -1,0 +1,6 @@
+;$Id$
+name = VS Admin Menu
+description = This module will add a block and the appropriate js and css files to show our VS Admin Menu.
+core = 7.x
+package = VS Custom Modules
+files[] = vs_admin_menu.module

@@ -1,0 +1,102 @@
+/* -- BREAKPOINTS -- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/variant\/public_html\/beta\/sites\/all\/themes\/vs\/sass\/partials\/styleguide\/type\/typography\.scss}line{font-family:\0000347}}
+h1, .page-title {
+  color: black;
+  font-family: "futura-pt-1","futura-pt-2",sans-serif;
+  font-size: 85px;
+  font-weight: normal;
+  margin: 0;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+@media all and (max-width: 760px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/variant\/public_html\/beta\/sites\/all\/themes\/vs\/sass\/partials\/styleguide\/type\/typography\.scss}line{font-family:\0000347}}
+  h1, .page-title {
+    font-size: 50px;
+    margin: 0 0 15px;
+    line-height: 1;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/variant\/public_html\/beta\/sites\/all\/themes\/vs\/sass\/partials\/styleguide\/type\/typography\.scss}line{font-family:\0000357}}
+h2, .sub-title, .sub-title > span {
+  color: black;
+  font-family: "aktiv-grotesk-std-1","aktiv-grotesk-std-2",sans-serif;
+  font-size: 44px;
+  font-weight: 300;
+  margin: 0;
+  line-height: 1.2;
+}
+@media all and (max-width: 760px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/variant\/public_html\/beta\/sites\/all\/themes\/vs\/sass\/partials\/styleguide\/type\/typography\.scss}line{font-family:\0000357}}
+  h2, .sub-title, .sub-title > span {
+    font-size: 36px;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/variant\/public_html\/beta\/sites\/all\/themes\/vs\/sass\/partials\/styleguide\/type\/typography\.scss}line{font-family:\0000364}}
+h3 {
+  color: black;
+  font-family: "futura-pt-1","futura-pt-2",sans-serif;
+  font-size: 40px;
+  font-weight: normal;
+  margin: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/variant\/public_html\/beta\/sites\/all\/themes\/vs\/sass\/partials\/styleguide\/type\/typography\.scss}line{font-family:\0000372}}
+h4 {
+  color: black;
+  font-family: "aktiv-grotesk-std-1","aktiv-grotesk-std-2",sans-serif;
+  font-size: 35px;
+  font-weight: 300;
+  margin: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/variant\/public_html\/beta\/sites\/all\/themes\/vs\/sass\/partials\/styleguide\/type\/typography\.scss}line{font-family:\0000381}}
+p, span, li, label, select, div {
+  color: #6d6e71;
+  font-family: "proxima-nova-1","proxima-nova-2",sans-serif;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/variant\/public_html\/beta\/sites\/all\/themes\/vs\/sass\/partials\/styleguide\/type\/typography\.scss}line{font-family:\0000385}}
+ul li, ol li {
+  padding-bottom: 5px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/variant\/public_html\/beta\/sites\/all\/themes\/vs\/sass\/partials\/styleguide\/type\/typography\.scss}line{font-family:\0000388}}
+p a {
+  color: black;
+  font-family: "proxima-nova-1","proxima-nova-2",sans-serif;
+  font-style: italic;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/variant\/public_html\/beta\/sites\/all\/themes\/vs\/sass\/partials\/styleguide\/type\/typography\.scss}line{font-family:\0000398}}
+.read-more-btn a {
+  background: #96ca2d;
+  padding: 10px 35px;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 35px;
+  transition: all .3s linear;
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/variant\/public_html\/beta\/sites\/all\/themes\/vs\/sass\/partials\/styleguide\/type\/typography\.scss}line{font-family:\00003106}}
+.read-more-btn a:hover {
+  background: #4bb5c1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/variant\/public_html\/beta\/sites\/all\/themes\/vs\/sass\/partials\/styleguide\/type\/typography\.scss}line{font-family:\00003113}}
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
